@@ -1,6 +1,7 @@
 .project-tab {
     margin: 0;
     font-family: 'Berlin Sans FB Demi', sans-serif;
+    min-height: 90vh;
 }
 
 .project-tab #tabs {
@@ -73,6 +74,10 @@ a.fa {
     font-weight: 600;
 }
 
+.navbar {
+    position: sticky;
+}
+
 .line1 {
     color: #000;
     font-size: 12px;
@@ -89,12 +94,13 @@ a.fa {
 
 .line3 a,
 .line3 i {
-    color: #032A3A;
+    color: #f7fdff;
     font-size: 20px;
 }
 
 .line3 {
     font-family: 'Berlin Sans FB Demi', sans-serif;
+    color: #f7fdff;
 }
 
 .cards {
@@ -162,5 +168,56 @@ a.fa {
         float: none;
         display: block;
         text-align: left;
+    }
+}
+
+footer {
+    background: #032A3A;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    bottom: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width:992px) {
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+    }
+    footer {
+        background: #032A3A;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 0;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    footer {
+        background: #032A3A;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 0;
+        bottom: 0;
     }
 }
