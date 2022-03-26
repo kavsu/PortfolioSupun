@@ -8,4 +8,4 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://kavindusupun.supunwebp.com
+Sitemap: https://kavindusupun.supunwebp.com/kavindusupun_sitemap.xml
